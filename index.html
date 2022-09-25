@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js" integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js" integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="display">
+                <div class="display-input" aria-placeholder="0">0</div>
+                <div class="display-main" aria-placeholder="0">0</div>
+                <div class="result" aria-placeholder="0">0</div>
+            </div>
+            <div class="buttons" id="buttons">
+                <button class="btn operation c-all" data-action="clear">C</button>
+                <button class="btn operation" data-action="clear-previous">CE</button>
+                <button class="btn operation" data-action="modulos">%</button>
+                <button class="btn operation bolder" data-action="divide">/</button>
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+                <button class="btn operation bolder" data-action="multiply">x</button>
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operation bolder" data-action="subtract">-</button>
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operation bolder" data-action="add">+</button>
+                <button class="btn number zero">0</button>
+                <button class="btn sign" data-action="parenthesis">()</button>
+                <button class="btn decimal" data-action="decimal">.</button>
+                <button class="btn equal" data-action="calculate">=</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
